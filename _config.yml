@@ -1,0 +1,4 @@
+theme: jekyll-theme-cayman
+author: Stanford NeuroAILab
+plugins:
+  - jekyll-seo-tag
