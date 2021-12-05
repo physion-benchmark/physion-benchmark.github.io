@@ -7,9 +7,11 @@ publication_venue: 'NeurIPS 2021'
 layout: default
 ---
 
-<video>
-    <source src="static/scenario_animation.mp4" type="video/mp4">
-</video>
+<p>
+    <video loop autoplay muted controls style="width:100%; height:auto">
+        <source src="static/scenario_animation.mp4" type="video/mp4">
+    </video>
+</p>
 
 Almost all of our behavior is guided by _intuitive physics_: our implicit knowledge of how different objects and materials behave in a wide variety of common scenarios. We know to stack boxes from largest to smallest, to place a cup on its flat base rather than its curved side, and to hook a coat on a hanger lest it fall to the floor. As AI algorithms begin to play larger roles in our daily lives, we must ensure that they, too, can make safe and effective decisions. But do they understand the physical world well enough to do so?
 
