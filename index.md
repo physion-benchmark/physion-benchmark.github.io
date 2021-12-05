@@ -12,7 +12,7 @@ layout: default
 
 Almost all of our behavior is guided by _intuitive physics_: our implicit knowledge of how different objects and materials behave in a wide variety of common scenarios. We know to stack boxes from largest to smallest, to place a cup on its flat base rather than its curved side, and to hook a coat on a hanger lest it fall to the floor. As AI algorithms begin to play larger roles in our daily lives, we must ensure that they, too, can make safe and effective decisions. But do they understand the physical world well enough to do so?
 
-#### [](#Probing physical understanding in machines)Probing physical understanding in machines
+#### [](#header-4)Probing physical understanding in machines
 To answer this question, we need a way of “asking” an AI model how it perceives a physical scenario. Two approaches have been popular in prior work: (1) training models to answer questions about simple synthetic scenarios, such as whether a stack of toy blocks will fall over or a pair of 2D objects will collide; and (2) training and testing large neural networks on the task of video synthesis, i.e. asking them to predict the upcoming frames of an input movie.
 
 Each of these approaches, despite some appeal, has severe drawbacks. The former dovetails with research in cognitive science, which has found that people can make accurate predictions about key physical events, like the tower falling, while abstracting away low-level details. To date, however, this sort of benchmarking in AI has been restricted to a small number of highly simplified scenarios that fail to capture the variety and complexity of everyday physics.
