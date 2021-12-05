@@ -6,9 +6,10 @@ paper_url: 'https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/file/d
 publication_venue: 'NeurIPS 2021'
 layout: default
 ---
-<div class="video-container">
-  <iframe class="video" src="static/scenario_animation.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
+
+<video>
+    <source src="static/scenario_animation.mp4" type="video/mp4">
+</video>
 
 Almost all of our behavior is guided by intuitive physics: our knowledge of how objects behave in common scenarios. We know to stack boxes from largest to smallest, to place a cup on its flat base rather than its curved side, and to avoid areas with falling debris. As AI algorithms begin to play larger roles in our daily lives, we must ensure that they, too, can make safe and effective decisions. But do they understand the physical world well enough to do so?
 
