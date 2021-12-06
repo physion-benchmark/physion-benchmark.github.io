@@ -24,10 +24,13 @@
       <h1 class="project-name">{{ page.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.github.project_tagline }}</h2>
       {% if page.repository_url %}
-        <a href="{{ page.repository_url }}" class="btn">Code on GitHub</a>
+        <a href="{{ page.repository_url }}" class="btn">Code</a>
       {% endif %}
       {% if page.paper_url %}
-        <a href="{{ page.paper_url }}" class="btn">{{ page.publication_venue | default: "arXiv"}} PDF</a>
+        <a href="{{ page.paper_url }}" class="btn">Paper</a>
+      {% endif %}
+      {% if page.download_url %}
+        <a href="{{ page.download_url }}" class="btn">Dataset</a>
       {% endif %}
     </section>
 

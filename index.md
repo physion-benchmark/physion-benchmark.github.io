@@ -2,10 +2,17 @@
 title: 'Physion: Evaluating Physical Prediction from Vision in Humans and Machines'
 description: 'Daniel M. Bear*, Elias Wang*, Damian Mrowca*, Felix Binder*, Hsiao-Yu Fish Tung, R.T. Pramod, Cameron Holdaway, Sirui Tao, Kevin Smith, Fan-Yun Sun, Li Fei-Fei, Nancy Kanwisher, Joshua B. Tenenbaum, Daniel L.K. Yamins**, and Judith Fan**'
 repository_url: 'https://github.com/cogtoolslab/physics-benchmarking-neurips2021'
-paper_url: 'https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/file/d09bf41544a3365a46c9077ebb5e35c3-Paper-round1.pdf'
+paper_url: 'https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/d09bf41544a3365a46c9077ebb5e35c3-Abstract-round1.html'
 publication_venue: 'NeurIPS 2021'
+download_url: 'https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip'
 layout: default
 ---
+Watch a short video describing **Physion**:
+<p style="overflow:hidden; padding-bottom:56.25%; position:relative; height:0">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Jz7ImDazcJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="left:0; top:0; height:100%; width:100%; position:absolute"></iframe>
+</p>
+
+<hr>
 
 <p>
     <video loop autoplay muted controls style="width:100%; height:auto">
