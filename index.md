@@ -7,6 +7,11 @@ publication_venue: 'NeurIPS 2021'
 download_url: 'https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip'
 layout: default
 ---
+<p>
+    <video loop autoplay muted controls style="width:100%; height:auto">
+        <source src="static/scenario_animation.mp4" type="video/mp4">
+    </video>
+</p>
 
 _Safe and effective AI requires algorithms that understand commonplace physical phenomena -- how objects move, interact, and can be manipulated to achieve our goals. **Physion** is a dataset and benchmark that allows us to ask: Do today's state-of-the-art AI models understand everyday physics as well as people do?_ 
 
@@ -18,12 +23,6 @@ _Watch a short video describing **Physion**_:
 </p>
 
 <hr>
-
-<p>
-    <video loop autoplay muted controls style="width:100%; height:auto">
-        <source src="static/scenario_animation.mp4" type="video/mp4">
-    </video>
-</p>
 
 Almost all of our behavior is guided by _intuitive physics_: our implicit knowledge of how different objects and materials behave in a wide variety of common scenarios. We know to stack boxes from largest to smallest, to place a cup on its flat base rather than its curved side, and to hook a coat on a hanger lest it fall to the floor. As AI algorithms begin to play larger roles in our daily lives, we must ensure that they, too, can make safe and effective decisions. But do they understand the physical world well enough to do so?
 
