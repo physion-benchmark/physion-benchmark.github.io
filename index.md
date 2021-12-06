@@ -12,7 +12,7 @@ layout: default
 
 # [](#header-3) **Physion** is a dataset and benchmark for evaluating AI models against human intuitions about how objects move and interact with one another. We test a broad suite of state-of-the-art models and a large number of people on the same 1.2K examples of objects rolling, sliding, falling, colliding, deforming, and more. We show that humans surpass current computer vision models at predicting how scenes unfold. Our experiments suggest that endowing these models with more physically explicit scene representations is a promising path toward human-like physical scene understanding, and thus safer and more effective AI. 
 
-# [](#header-3) _Our NeurIPS 2021 talk on **Physion**_ 
+# [](#header-3) _Watch our talk at NeurIPS 2021_ 
 <p style="overflow:hidden; padding-bottom:56.25%; position:relative; height:0">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Jz7ImDazcJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="left:0; top:0; height:100%; width:100%; position:absolute"></iframe>
 </p>
@@ -35,24 +35,24 @@ Video synthesis, on the other hand, makes few assumptions about _how_ an algorit
     </video>
 </p>
 
-# [](#header-1)Physion: a diverse and challenging benchmark for visual intuitive physics 
+# [](#header-1)Physion: a benchmark for visual intuitive physics
 To fill the large gap between these approaches, we need a way to test for _human-like_ physical understanding in _diverse, challenging, and visually realistic environments_. We therefore introduce the **Physion Dataset and Benchmark**. Our key contributions are:
 * Training and testing sets for _**eight realistically simulated and rendered 3D scenarios**_ that probe different aspects of physical understanding: how objects roll, slide, fall, and collide; how one object may support, contain, or attach to another; and how multiple objects made of different materials interact,
 * A _**unified testing protocol**_ for comparing AI models to humans on a challenging prediction task,
 * An initial _**evaluation of state-of-the-art computer vision and graph neural network models**_ on the Physion benchmark, the results of which suggest that today’s algorithms should incorporate more physically explicit scene representations to reach human ability.
 
-### [](#header-3) Designing the benchmark in [ThreeDWorld](https://www.threedworld.org/)
+
+### [](#header-2) Using [ThreeDWorld](https://www.threedworld.org/) to design the Physion benchmark
 
 <p align="center">
     <img src="static/comparison_table.png" />
 </p>
 
-
 On a narrow benchmark, models might overfit and achieve “super-human performance” without understanding everyday physics in the general, flexible way people do. On the other hand, a benchmark that relied on higher level "semantic" knowledge would not directly test intuitive physics. We therefore took an intermediate approach to designing Physion: each of its eight scenarios focuses on specific physical phenomena that occur often in everyday life. Stimuli for each scenario were physically simulated and visually rendered using the Unity3D-based [ThreeDWorld environment](https://www.threedworld.org/), which adeptly handles diverse physics like projectile motion and object collisions, rolling and sliding across surfaces of varying friction, and clothlike or deformable material interactions. We provide training and testing sets of 2000 and 150 movies, respectively, for each scenario, as well as code for generating more training data.
 
 
 
-### [](#header-3)Comparing humans and machines
+### [](#header-2)Comparing humans and machines
 
 
 <p align="center">
@@ -61,8 +61,7 @@ On a narrow benchmark, models might overfit and achieve “super-human performan
 
 To measure how well both models and people understand each scenario, we created a common readout task for all stimuli: _Object Contact Prediction_. This task has a person or model observe the first portion of each Physion movie, then make a prediction about whether two of the scene's objects will come into contact during the remaining, unseen portion. People easily grasp this task and make accurate predictions. To measure model behavior, we adapted the standard method of _transfer learning_ to our prediction task: models pretrained on unlabeled Physion movies or other datasets are probed with a linear readout to make predictions about upcoming object contact. Since models and humans do the same task on the same stimuli, we can directly compare their behavior.
 
-
-# [](#header-1)How do today’s vision algorithms measure up to humans? 
+# [](#header-1)How do today’s AI models compare to humans? 
 
 <p align="center">
     <img src="static/model_pipeline.png" />
