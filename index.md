@@ -34,7 +34,7 @@ Each of these approaches has merits and drawbacks. The former dovetails with res
 
 Video synthesis, on the other hand, makes few assumptions about _how_ an algorithm should understand scenes. For this reason, video synthesis on real, unlabeled data is a popular training task in robotics: if an agent can make accurate predictions about its environment, it might accomplish its goals. But predicting everything about how a scene changes is enormously hard, [even with gargantuan datasets](https://arxiv.org/abs/2106.13195). As a result, these models currently succeed only in narrow domains. Moreover, humans do not even [_see_](https://en.wikipedia.org/wiki/Inattentional_blindness) everything that happens in a movie, let alone predict it; video synthesis is therefore unlikely to capture the intuitions we use to make decisions in new, wide-ranging settings. 
 
-# [](#header-1)Physion: a diverse and challenging benchmark for visual intuitive physics 
+# [](#header-1)Physion: a benchmark for visual intuitive physics 
 To fill the large gap between these approaches, we need a way to test for _human-like_ physical understanding in _diverse, challenging, and visually realistic environments_. We therefore introduce the **Physion Dataset and Benchmark**. Our key contributions are
 * Training and testing sets for _eight realistically simulated and rendered 3D scenarios_ that probe different aspects of physical understanding: how objects roll, slide, fall, and collide; how one object may support, contain, or attach to another; and how multiple objects made of different materials interact
 * A _unified testing procedure_ for comparing AI models to humans on a challenging prediction task
@@ -54,7 +54,7 @@ To measure how well both models and people understand each scenario, we created 
     <img src="static/human_model_comparison.png" />
 </p>
 
-# [](#header-1)How do today’s AI algorithms measure up to humans? 
+# [](#header-1)How do today’s AI models compare to humans? 
 Humans make accurate predictions about the Physion stimuli, but they aren’t perfect. Some scenarios were more challenging than others: for instance, people had a harder time judging the effects of object-object attachment in the **Link** scenario than how objects would fall down a ramp in the **Roll** scenario. Moreover, some stimuli appeared to be “physically adversarial”: most people predicted one outcome, but in the ground truth movie the opposite occurred -- often due to a physical fluke, like an object teetering on the brink of falling over. Imperfect human performance is a feature of our approach, not a bug: it means that a (hypothetical) super-human model might be overfitting to scenario-specific cues that people ignore. Since abstracting away low-level detail is key to how we make general and efficient judgments, it is crucial to know whether current and future AI models do the same.
 
 For the time being, though, the state-of-the-art in computer vision appears far behind humans at making physical predictions: _none of the vision neural networks we tested_, regardless of model architecture or pretraining task, came close to human performance on the Physion benchmark. While the models that received object-related training signals fared slightly better than those that didn't, control experiments suggested that these models often fail to make human-like judgments about what they _observe_, even before making predictions. Thus, current vision models appear to lack essential components of human intuitive physics.
