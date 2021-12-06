@@ -7,9 +7,9 @@ publication_venue: 'NeurIPS 2021'
 download_url: 'https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip'
 layout: default
 ---
-_Safe and effective AI requires algorithms that understand the everyday physical world -- how objects move, interact, and can be manipulated to achieve our goals. **Physion** is a dataset and benchmark that allows us, for the first time, to ask: Do today's state-of-the-art AI models understand diverse, commonplace physical phenomena as well as people do? 
+_Safe and effective AI requires algorithms that understand the everyday physical world -- how objects move, interact, and can be manipulated to achieve our goals. **Physion** is a dataset and benchmark that allows us, for the first time, to ask: Do today's state-of-the-art AI models understand diverse, commonplace physical phenomena as well as people do?_ 
 
-**Physion** tests models against human judgments on 1200 videos in which objects roll, slide, fall, collide, deform, and more. We show that humans far surpass current computer vision algorithms at predicting how scenes unfold; however, endowing these models with more physically explicit scene representations is a promising path toward more human-like intuition._
+_**Physion** tests models against human judgments on 1200 videos in which objects roll, slide, fall, collide, deform, and more. We show that humans far surpass current computer vision algorithms at predicting how scenes unfold; however, endowing these models with more physically explicit scene representations is a promising path toward more human-like intuition._
 
 _Watch a short video describing **Physion**_:
 <p style="overflow:hidden; padding-bottom:56.25%; position:relative; height:0">
