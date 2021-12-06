@@ -47,6 +47,9 @@ Humans make accurate predictions about the Physion stimuli, but they aren’t pe
 
 For the time being, however, the state-of-the-art in computer vision appears to be far behind humans at making physical predictions: _none of the vision neural networks we tested_, whether they were trained on video synthesis or supervised tasks, used an object-centric or structureless scene representation, or had a convolutional or transformer-based encoder architecture, came close to human performance on the Physion benchmark. While the models that received object-related learning signals fared slightly better than those that didn't, control experiments suggested that these models often do not even make human-like judgments about what they _observe_, let alone make human-like predictions. Thus, current vision models appear to lack essential components of human intuitive physics.
 
+<p align="center">
+    <img src="static/model_pipeline.png" />
+</p>
 
 #### [](#header-4)What’s missing from computer vision models for physical understanding? 
 Fortunately, the way to close this large gap between models and machines isn't a total shot in the dark: we were able to find cases where neural networks _can_ perform as well as people. Algorithms called Graph Neural Networks (GNNs) made predictions on some of the Physion scenarios as accurately as humans, suggesting that they may hold some of the keys to intuitive physical understanding. However, these models have an enormous advantage over human participants: instead of receiving visual input (i.e., movies), they operate on the _ground truth physical state_ of the ThreeDWorld simulator. This means that they have near-perfect knowledge of each object’s boundaries, 3D shape, and fine-scale trajectory; are unhindered by occlusion or by only seeing the front surfaces of objects; and are explicitly told which parts of the scene can be ignored or compressed into a more efficient representation. 
