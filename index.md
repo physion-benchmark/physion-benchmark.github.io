@@ -1,6 +1,6 @@
 ---
 title: 'Physion: Evaluating Physical Prediction from Vision in Humans and Machines'
-description: 'Daniel M. Bear*, Elias Wang*, Damian Mrowca*, Felix Binder*, Hsiao-Yu Fish Tung, R.T. Pramod, Cameron Holdaway, Sirui Tao, Kevin Smith, Fan-Yun Sun, Li Fei-Fei, Nancy Kanwisher, Jushua B. Tenenbaum, Daniel L.K. Yamins**, and Judith Fan**'
+description: 'Daniel M. Bear*, Elias Wang*, Damian Mrowca*, Felix Binder*, Hsiao-Yu Fish Tung, R.T. Pramod, Cameron Holdaway, Sirui Tao, Kevin Smith, Fan-Yun Sun, Li Fei-Fei, Nancy Kanwisher, Joshua B. Tenenbaum, Daniel L.K. Yamins**, and Judith Fan**'
 repository_url: 'https://github.com/cogtoolslab/physics-benchmarking-neurips2021'
 paper_url: 'https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/file/d09bf41544a3365a46c9077ebb5e35c3-Paper-round1.pdf'
 publication_venue: 'NeurIPS 2021'
