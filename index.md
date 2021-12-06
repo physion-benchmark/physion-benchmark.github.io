@@ -9,9 +9,9 @@ layout: default
 ---
 _Safe and effective AI requires algorithms that understand the everyday physical world -- how objects move, interact, and can be manipulated to achieve our goals. **Physion** is a dataset and benchmark that allows us, for the first time, to ask: Do today's state-of-the-art AI models understand diverse, commonplace physical phenomena as well as people do? 
 
-**Physion** tests models against the judgments of over 800 human participants on on eight types of physical prediction scenario, in which objects roll, slide, fall, collide, interact with multiple materials, and more. Our initial evaluation reveals that humans far surpass current computer vision algorithms at predicting how a scene will unfold; however, endowing these models with more object-centric, physically explicit scene representations is a promising path toward more human-like ability._
+**Physion** tests models against human judgments on 1200 videos in which objects roll, slide, fall, collide, deform, and more. We show that humans far surpass current computer vision algorithms at predicting how scenes unfold; however, endowing these models with more physically explicit scene representations is a promising path toward more human-like intuition._
 
-Watch a short video describing **Physion**:
+_Watch a short video describing **Physion**_:
 <p style="overflow:hidden; padding-bottom:56.25%; position:relative; height:0">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Jz7ImDazcJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="left:0; top:0; height:100%; width:100%; position:absolute"></iframe>
 </p>
