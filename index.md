@@ -24,9 +24,10 @@ _Watch a short video describing **Physion**_:
     </video>
 </p>
 
+# [](#header-1)Probing physical understanding in machines
+
 Almost all of our behavior is guided by _intuitive physics_: our implicit knowledge of how different objects and materials behave in a wide variety of common scenarios. We know to stack boxes from largest to smallest, to place a cup on its flat base rather than its curved side, and to hook a coat on a hanger, lest it fall to the floor. As AI algorithms play a larger role in our daily life, we must ensure that they, too, can make safe and effective decisions. But do they understand the physical world well enough to do so?
 
-# [](#header-1)Probing physical understanding in machines
 To answer this, we need a way of “asking” an AI model how it perceives a physical scenario. Two approaches have been popular in prior work: (1) asking models questions about simple scenarios, such as whether [a block tower will fall](https://openaccess.thecvf.com/content_ECCV_2018/papers/Oliver_Groth_ShapeStacks_Learning_Vision-Based_ECCV_2018_paper.pdf) or an object will [emerge from behind an occluder](https://intphys.com/index.html); and (2) training and testing large neural networks on _video synthesis_, i.e. asking them to [predict the upcoming frames of a movie](https://arxiv.org/pdf/1802.07687.pdf).
 
 Each of these approaches has merits and drawbacks. The former dovetails with research in cognitive science, which has found that people make [accurate predictions about key physical events](https://www.pnas.org/content/110/45/18327.short), like the tower falling, while abstracting away low-level details. To date, however, this sort of benchmarking in AI has been restricted to a few simple scenarios that lack the variety and complexity of everyday physics.
@@ -39,14 +40,14 @@ To fill the large gap between these approaches, we need a way to test for _human
 * A _unified testing procedure_ for comparing AI models to humans on a challenging prediction task
 * An initial _evaluation of state-of-the-art computer vision and graph neural network models_ on the Physion benchmark, the results of which suggest that today’s algorithms should incorporate more physically explicit scene representations to reach human ability
 
-#### [](#header-4)Designing a diverse and challenging benchmark 
+### [](#header-3)Designing a diverse and challenging benchmark 
 On a narrow benchmark, models might overfit and achieve “super-human performance” without understanding everyday physics in the general, flexible way people do. On the other hand, a benchmark that relied on higher level "semantic" knowledge would not directly test intuitive physics. We therefore took an intermediate approach to designing Physion: each of its eight scenarios focuses on specific physical phenomena that occur often in everyday life. Stimuli for each scenario were physically simulated and visually rendered using the Unity3D-based [ThreeDWorld environment](https://www.threedworld.org/), which adeptly handles diverse physics like projectile motion and object collisions, rolling and sliding across surfaces of varying friction, and clothlike or deformable material interactions. We provide training and testing sets of 2000 and 150 movies, respectively, for each scenario, as well as code for generating more training data.
 
 <p align="center">
     <img src="static/comparison_table.png" />
 </p>
 
-#### [](#header-4)Directly comparing humans to machines at physical understanding 
+### [](#header-3)Directly comparing humans to machines at physical understanding 
 To measure how well both models and people understand each scenario, we created a common readout task for all stimuli: _Object Contact Prediction_. This task has a person or model observe the first portion of each Physion movie, then make a prediction about whether two of the scene's objects will come into contact during the remaining, unseen portion. People easily grasp this task and make accurate predictions. To measure model behavior, we adapted the standard method of _transfer learning_ to our prediction task: models pretrained on unlabeled Physion movies or other datasets are probed with a linear readout to make predictions about upcoming object contact. Since models and humans do the same task on the same stimuli, we can directly compare their behavior.
 
 <p align="center">
@@ -62,7 +63,7 @@ For the time being, though, the state-of-the-art in computer vision appears far 
     <img src="static/model_pipeline.png" />
 </p>
 
-#### [](#header-4)What’s missing from computer vision models for physical understanding? 
+### [](#header-3)What’s missing from computer vision models for physical understanding? 
 Fortunately, the way to close this large gap between models and machines isn't a total shot in the dark: in some cases neural networks _did_ perform as well as people. Models called Graph Neural Networks (GNNs) reached human accuracy on some Physion scenarios, suggesting that they may hold aspects of intuitive physical understanding. However, these models have an enormous advantage over people: instead of receiving visual input, they operate on the _ground truth physical state_ of the ThreeDWorld simulator. This means that they have near-perfect knowledge of each object’s boundaries, 3D shape, and fine-scale trajectory; are unhindered by occlusion; and are explicitly told which parts of the scene can be ignored or compressed into a more efficient representation. 
 
 Thus, these models bypass the amazing computations our brain uses to parse a scene as a set of [physical objects moving through 3D space](https://onlinelibrary.wiley.com/doi/pdf/10.1207/s15516709cog1401_3#:~:text=Object%20perception%20does%20accord%20with,each%20other%20only%20on%20contact) -- computations that emerge, without direct supervision, [by the end of human infancy](https://pubmed.ncbi.nlm.nih.gov/10349761/). The GNNs’ success suggests, though, that if we understood these computations -- that is, if we could implement visual encoding models that produce object-centric, physically explicit scene representations like the ones the GNNs use -- then we might obtain algorithms with (more) human-like physical understanding. Such vision models are therefore an attractive target for future work and for using Physion to bring AI in line with human intuitive physics.
