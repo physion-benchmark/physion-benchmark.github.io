@@ -12,7 +12,8 @@ layout: default
 
 **Physion** is a dataset and benchmark for evaluating AI models against human intuitions about how objects move and interact with one another. We test a broad suite of state-of-the-art models and a large number of people on the same 1.2K examples of objects rolling, sliding, falling, colliding, deforming, and more. We show that humans surpass current computer vision models at predicting how scenes unfold. Our experiments suggest that endowing these models with more physically explicit scene representations is a promising path toward human-like physical scene understanding, and thus safer and more effective AI. 
 
-# [](#header-3) Watch our talk at NeurIPS 2021
+### [](#header-3) Watch our talk at NeurIPS 2021
+
 <p style="overflow:hidden; padding-bottom:56.25%; position:relative; height:0">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Jz7ImDazcJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="left:0; top:0; height:100%; width:100%; position:absolute"></iframe>
 </p>
@@ -25,9 +26,9 @@ Almost all of our behavior is guided by _intuitive physics_: our implicit knowle
 
 To answer this, we need a way of “asking” an AI model how it perceives a physical scenario. Two approaches have been popular in prior work: (1) asking models questions about simple scenarios, such as whether [a block tower will fall](https://openaccess.thecvf.com/content_ECCV_2018/papers/Oliver_Groth_ShapeStacks_Learning_Vision-Based_ECCV_2018_paper.pdf) or an object will [emerge from behind an occluder](https://intphys.com/index.html); and (2) training and testing large neural networks on _video synthesis_, i.e. asking them to [predict the upcoming frames of a movie](https://arxiv.org/pdf/1802.07687.pdf).
 
-Each of these approaches has merits and drawbacks. The former dovetails with research in cognitive science, which has found that people make [accurate predictions about key physical events](https://www.pnas.org/content/110/45/18327.short), like the tower falling, while abstracting away low-level details. To date, however, this sort of benchmarking in AI has been restricted to a few simple scenarios that lack the variety and complexity of everyday physics.
+Each of these approaches has merits and drawbacks. The first dovetails with research in cognitive science, which has found that people make [accurate predictions about key physical events](https://www.pnas.org/content/110/45/18327.short), like the tower falling, while abstracting away low-level details. To date, however, this sort of benchmarking in AI has been restricted to a few simple scenarios that lack the variety and complexity of everyday physics.
 
-Video synthesis, on the other hand, makes few assumptions about _how_ an algorithm should understand scenes. For this reason, video synthesis on real, unlabeled data is a popular training task in robotics: if an agent can make accurate predictions about its environment, it might accomplish its goals. But predicting everything about how a scene changes is enormously hard, [even with gargantuan datasets](https://arxiv.org/abs/2106.13195). As a result, these models currently succeed only in narrow domains. Moreover, humans do not even [_see_](https://en.wikipedia.org/wiki/Inattentional_blindness) everything that happens in a movie, let alone predict it; video synthesis is therefore unlikely to capture the intuitions we use to make decisions in new, wide-ranging settings. 
+The second approach makes few assumptions about _how_ an algorithm should understand scenes. For this reason, video synthesis on real, unlabeled data is a popular training task in robotics: if an agent can make accurate predictions about its environment, it might accomplish its goals. But predicting everything about how a scene changes is enormously hard, [even with gargantuan datasets](https://arxiv.org/abs/2106.13195). As a result, these models currently succeed only in narrow domains. Moreover, humans do not even [_see_](https://en.wikipedia.org/wiki/Inattentional_blindness) everything that happens in a movie, let alone predict it; video synthesis is therefore unlikely to capture the intuitions we use to make decisions in new, wide-ranging settings. 
 
 <p>
     <video loop autoplay muted controls style="width:100%; height:auto">
@@ -36,13 +37,14 @@ Video synthesis, on the other hand, makes few assumptions about _how_ an algorit
 </p>
 
 # [](#header-1)Physion: a benchmark for visual intuitive physics
+
 To fill the large gap between these approaches, we need a way to test for _human-like_ physical understanding in _diverse, challenging, and visually realistic environments_. We therefore introduce the **Physion Dataset and Benchmark**. Our key contributions are:
 * Training and testing sets for _**eight realistically simulated and rendered 3D scenarios**_ that probe different aspects of physical understanding: how objects roll, slide, fall, and collide; how one object may support, contain, or attach to another; and how multiple objects made of different materials interact,
 * A _**unified testing protocol**_ for comparing AI models to humans on a challenging prediction task,
 * An initial _**evaluation of state-of-the-art computer vision and graph neural network models**_ on the Physion benchmark, the results of which suggest that today’s algorithms should incorporate more physically explicit scene representations to reach human ability.
 
 
-### [](#header-2) Using [ThreeDWorld](https://www.threedworld.org/) to design the Physion benchmark
+## [](#header-2) Using [ThreeDWorld](https://www.threedworld.org/) to design the Physion benchmark
 
 <p align="center">
     <img src="static/comparison_table.png" />
@@ -50,10 +52,7 @@ To fill the large gap between these approaches, we need a way to test for _human
 
 On a narrow benchmark, models might overfit and achieve “super-human performance” without understanding everyday physics in the general, flexible way people do. On the other hand, a benchmark that relied on higher level "semantic" knowledge would not directly test intuitive physics. We therefore took an intermediate approach to designing Physion: each of its eight scenarios focuses on specific physical phenomena that occur often in everyday life. Stimuli for each scenario were physically simulated and visually rendered using the Unity3D-based [ThreeDWorld environment](https://www.threedworld.org/), which adeptly handles diverse physics like projectile motion and object collisions, rolling and sliding across surfaces of varying friction, and clothlike or deformable material interactions. We provide training and testing sets of 2000 and 150 movies, respectively, for each scenario, as well as code for generating more training data.
 
-
-
-### [](#header-2)Comparing humans and machines
-
+## [](#header-2)Comparing humans and machines
 
 <p align="center">
     <img src="static/human_model_comparison.png" />
@@ -76,7 +75,7 @@ For the time being, though, the state-of-the-art in computer vision appears far 
 </p>
 
 
-### [](#header-3)What’s missing from vision algorithms to achieve physical understanding? 
+## [](#header-3)What’s missing from vision algorithms to achieve physical understanding? 
 
 Fortunately, the way to close this large gap between models and machines isn't a total shot in the dark: in some cases neural networks _did_ perform as well as people. Models called Graph Neural Networks (GNNs) reached human accuracy on some Physion scenarios, suggesting that they may hold aspects of intuitive physical understanding. However, these models have an enormous advantage over people: instead of receiving visual input, they operate on the _ground truth physical state_ of the ThreeDWorld simulator. This means that they have near-perfect knowledge of each object’s boundaries, 3D shape, and fine-scale trajectory; are unhindered by occlusion; and are explicitly told which parts of the scene can be ignored or compressed into a more efficient representation. 
 
