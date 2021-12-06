@@ -8,7 +8,7 @@ download_url: 'https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com
 layout: default
 ---
 
-# [](#header-1) Do today's state-of-the-art vision models understand everyday physical phenomena as well as people do?
+# [](#header-1) Do today's vision models understand everyday physical phenomena as well as people do?
 
 **Physion** is a dataset and benchmark for evaluating AI models against human intuitions about how objects move and interact with one another. We test a broad suite of state-of-the-art models and a large number of people on the same 1.2K examples of objects rolling, sliding, falling, colliding, deforming, and more. We show that humans surpass current computer vision models at predicting how scenes unfold. Our experiments suggest that endowing these models with more physically explicit scene representations is a promising path toward human-like physical scene understanding, and thus safer and more effective AI. 
 
