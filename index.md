@@ -4,7 +4,7 @@ description: 'Daniel M. Bear*, Elias Wang*, Damian Mrowca*, Felix Binder*, Hsiao
 repository_url: 'https://github.com/cogtoolslab/physics-benchmarking-neurips2021'
 paper_url: 'https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/d09bf41544a3365a46c9077ebb5e35c3-Abstract-round1.html'
 publication_venue: 'NeurIPS 2021'
-download_url: 'https://physics-benchmarking-neurips2021-dataset.s3.amazonaws.com/Physion.zip'
+download_url: 'https://github.com/cogtoolslab/physics-benchmarking-neurips2021#downloading-the-physion-dataset'
 layout: default
 ---
 
