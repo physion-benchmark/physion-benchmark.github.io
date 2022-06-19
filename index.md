@@ -87,41 +87,64 @@ Thus, these models bypass the amazing computations our brain uses to parse a sce
 
 # An overview over the 8 scenarios
 
+## Support
+
 <p>
     <video loop autoplay muted controls style="width:100%; height:auto">
         <source src="static/towers_stims.mp4" type="video/mp4">
     </video>
 </p>
+
+## Roll
+
 <p>
     <video loop autoplay muted controls style="width:100%; height:auto">
         <source src="static/rollingsliding_stims.mp4" type="video/mp4">
     </video>
 </p>
+
+## Link
+
 <p>
     <video loop autoplay muted controls style="width:100%; height:auto">
         <source src="static/linking_stims.mp4" type="video/mp4">
     </video>
 </p>
+
+## Drop
+
 <p>
     <video loop autoplay muted controls style="width:100%; height:auto">
         <source src="static/drop_stims.mp4" type="video/mp4">
     </video>
 </p>
+
+## Dominoes
+
 <p>
     <video loop autoplay muted controls style="width:100%; height:auto">
         <source src="static/dominoes_stims.mp4" type="video/mp4">
     </video>
 </p>
+
+## Contain
+
 <p>
     <video loop autoplay muted controls style="width:100%; height:auto">
         <source src="static/containment_stims.mp4" type="video/mp4">
     </video>
 </p>
+
+## Collide
+
 <p>
     <video loop autoplay muted controls style="width:100%; height:auto">
         <source src="static/collision_stims.mp4" type="video/mp4">
     </video>
 </p>
+
+## Drape
+
 <p>
     <video loop autoplay muted controls style="width:100%; height:auto">
         <source src="static/clothiness_stims.mp4" type="video/mp4">
