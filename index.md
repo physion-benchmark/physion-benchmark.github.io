@@ -84,3 +84,46 @@ Thus, these models bypass the amazing computations our brain uses to parse a sce
 <p align="center">
     <img src="static/results_summary.png" />
 </p>
+
+# An overview over the 8 scenarios
+
+<p>
+    <video loop autoplay muted controls style="width:100%; height:auto">
+        <source src="static/towers_stims.mp4" type="video/mp4">
+    </video>
+</p>
+<p>
+    <video loop autoplay muted controls style="width:100%; height:auto">
+        <source src="static/rollingsliding_stims.mp4" type="video/mp4">
+    </video>
+</p>
+<p>
+    <video loop autoplay muted controls style="width:100%; height:auto">
+        <source src="static/linking_stims.mp4" type="video/mp4">
+    </video>
+</p>
+<p>
+    <video loop autoplay muted controls style="width:100%; height:auto">
+        <source src="static/drop_stims.mp4" type="video/mp4">
+    </video>
+</p>
+<p>
+    <video loop autoplay muted controls style="width:100%; height:auto">
+        <source src="static/dominoes_stims.mp4" type="video/mp4">
+    </video>
+</p>
+<p>
+    <video loop autoplay muted controls style="width:100%; height:auto">
+        <source src="static/containment_stims.mp4" type="video/mp4">
+    </video>
+</p>
+<p>
+    <video loop autoplay muted controls style="width:100%; height:auto">
+        <source src="static/collision_stims.mp4" type="video/mp4">
+    </video>
+</p>
+<p>
+    <video loop autoplay muted controls style="width:100%; height:auto">
+        <source src="static/clothiness_stims.mp4" type="video/mp4">
+    </video>
+</p>
