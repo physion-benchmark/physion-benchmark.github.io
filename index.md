@@ -85,7 +85,9 @@ Thus, these models bypass the amazing computations our brain uses to parse a sce
     <img src="static/results_summary.png" />
 </p>
 
-# An overview over the 8 scenarios
+# Physion Gallery 
+
+Below are several example videos from each scenario class, varying in prediction difficulty for humans from the most difficult (top row) to least difficult (bottom row). 
 
 ## Support
 
