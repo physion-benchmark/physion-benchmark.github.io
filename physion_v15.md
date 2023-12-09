@@ -10,15 +10,36 @@ layout: default
 In Physion v1.5, the rendering quality and photorealism have been improved compared to v1. Additionally, v1.5 introduces a new indoor environment, the craft room, adding to the two environments in Physion v1. This version also enhances the diversity of lighting conditions using a collection of 8 unique HDRI skyboxes. These skyboxes are specifically designed to simulate various environmental lighting scenarios, allowing for dynamic time-of-day simulations in the room through adjustments in the orientation of the skyboxes.
 
 ## Examples
-| Scenario  | Video                                                                                                                             |
-|-----------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Dominoes  | <video src="static/v15/pilot_dominoes_default_boxroom_0003_img.mp4" controls autoplay loop title="Title" width="200"></video>                 |
-| Roll      | <video src="static/v15/pilot_it2_rollingSliding_simple_ramp_box_0029_img.mp4" controls autoplay loop title="Title" width="200"></video>        |
-| Collide   | <video src="static/v15/pilot_it2_collision_assorted_targets_tdw_1_dis_1_occ_0014_img.mp4" controls autoplay loop title="Title" width="200"></video> |
-| Drop      | <video src="static/v15/pilot_it2_drop_all_bowls_tdw_1_dis_1_occ_0003_img.mp4" controls autoplay loop title="Title" width="200"></video>        |
-| Link      | <video src="static/v15/pilot_linking_nl1-8_mg000_aCyl_bCyl_tdwroom1_long_a_0027_img.mp4" controls autoplay loop title="Title" width="200"></video> |
-| Support   | <video src="static/v15/pilot_towers_nb4_SJ025_mono1_dis0_occ0_tdwroom_unstable_0027_img.mp4" controls autoplay loop title="Title" width="200"></video> |
-| Contain   | <video src="static/v15/pilot-containment-bowl-familiarization_0024_img.mp4" controls autoplay loop title="Title" width="200"></video>         |
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 10px;">
+    <div>
+        <h3>Dominoes</h3>
+        <video src="static/v15/pilot_dominoes_default_boxroom_0003_img.mp4" controls autoplay loop title="Title" width="200"></video>
+    </div>
+    <div>
+        <h3>Roll</h3>
+        <video src="static/v15/pilot_it2_rollingSliding_simple_ramp_box_0029_img.mp4" controls autoplay loop title="Title" width="200"></video>
+    </div>
+    <div>
+        <h3>Collide</h3>
+        <video src="static/v15/pilot_it2_collision_assorted_targets_tdw_1_dis_1_occ_0014_img.mp4" controls autoplay loop title="Title" width="200"></video>
+    </div>
+    <div>
+        <h3>Drop</h3>
+        <video src="static/v15/pilot_it2_drop_all_bowls_tdw_1_dis_1_occ_0003_img.mp4" controls autoplay loop title="Title" width="200"></video>
+    </div>
+    <div>
+        <h3>Link</h3>
+        <video src="static/v15/pilot_linking_nl1-8_mg000_aCyl_bCyl_tdwroom1_long_a_0027_img.mp4" controls autoplay loop title="Title" width="200"></video>
+    </div>
+    <div>
+        <h3>Support</h3>
+        <video src="static/v15/pilot_towers_nb4_SJ025_mono1_dis0_occ0_tdwroom_unstable_0027_img.mp4" controls autoplay loop title="Title" width="200"></video>
+    </div>
+    <div>
+        <h3>Contain</h3>
+        <video src="static/v15/pilot-containment-bowl-familiarization_0024_img.mp4" controls autoplay loop title="Title" width="200"></video>
+    </div>
+</div>
 
 ## Data Download Links
 We provide the data download links below for training the linear probe and evaluation on the test set.
