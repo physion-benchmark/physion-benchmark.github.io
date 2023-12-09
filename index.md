@@ -7,6 +7,11 @@ publication_venue: 'NeurIPS 2021'
 download_url: 'https://github.com/cogtoolslab/physics-benchmarking-neurips2021#downloading-the-physion-dataset'
 layout: default
 ---
+<div style="border: 3px solid green; padding: 5px; text-align: center;">
+    <h3>We've just released an updated version of the dataset:<br> <strong>Physion V1.5</strong></h3>
+    <p>Click <a href="physion_v15">here</a> to learn more</p>
+</div>
+<br>
 
 # Do today's vision models understand everyday physical phenomena as well as people do?
 
